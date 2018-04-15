@@ -1,4 +1,4 @@
-# Connect IQ Developer Summit HERE Technologies Workshop Examples
+# Connect IQ Developer Summit HERE Technologies Workshop
 Example files for my workshop at the Garmin Developer Summit 2018
 
 > **Note:** In order to get the sample code to work, you **must** replace the string resources `app_id` and `app-code` (in resources/strings/strings.xml) with valid HERE developer credentials for each project.
