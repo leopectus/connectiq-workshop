@@ -1,0 +1,6 @@
+<strings>
+    <string id="AppName">Geocoding</string>
+    <string id="prompt">Press start for GPS</string>        
+    <string id="app_id">REPLACE</string>
+    <string id="app_code">REPLACE</string>    
+</strings>
