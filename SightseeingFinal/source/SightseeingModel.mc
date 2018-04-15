@@ -221,7 +221,7 @@ class SightseeingModel {
     	} else {    		
     		sightIndex = 0;    		
     	}
-    	setRoutingInfo();    	
+    	setPlacesInfo();    	
 	}	
 	
 	function routingIndexInc() {
