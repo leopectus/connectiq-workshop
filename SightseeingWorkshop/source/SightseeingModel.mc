@@ -37,7 +37,7 @@ class SightseeingModel {
 	
 	//TODO: create functions to parse results from Places API call (onPlacesReceive)
 
-	//TODO: create function to set Places display information (setRoutingInfo)
+	//TODO: create function to set Places display information (setPlacesInfo)
 	
 
 	//TODO: create function to make WebRequest to the HERE Routing API (makeRoutingWebrequest)
@@ -87,7 +87,7 @@ class SightseeingModel {
     	} else {    		
     		sightIndex = 0;    		
     	}
-    	setRoutingInfo();    	
+    	setPlacesInfo();    	
 	}	
 	
 	function routingIndexInc() {
