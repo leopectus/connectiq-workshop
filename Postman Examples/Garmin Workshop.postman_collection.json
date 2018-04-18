@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "b58a5eeb-04f8-486a-8fb5-6fa1cc488859",
+		"name": "Garmin Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Nearby Places",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://places.api.here.com/places/v1/discover/explore?app_id={{app_id}}&app_code={{app_code}}&at=52.530861,13.38474&cat=sights-museums&size=10",
+					"protocol": "https",
+					"host": [
+						"places",
+						"api",
+						"here",
+						"com"
+					],
+					"path": [
+						"places",
+						"v1",
+						"discover",
+						"explore"
+					],
+					"query": [
+						{
+							"key": "app_id",
+							"value": "{{app_id}}"
+						},
+						{
+							"key": "app_code",
+							"value": "{{app_code}}"
+						},
+						{
+							"key": "at",
+							"value": "52.530861,13.38474"
+						},
+						{
+							"key": "cat",
+							"value": "sights-museums"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedestrian Routing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{app_id}}&app_code={{app_code}}&waypoint0=38.85702,-94.79844&waypoint1=38.87423,-94.78308&mode=shortest;pedestrian",
+					"protocol": "https",
+					"host": [
+						"route",
+						"api",
+						"here",
+						"com"
+					],
+					"path": [
+						"routing",
+						"7.2",
+						"calculateroute.json"
+					],
+					"query": [
+						{
+							"key": "app_id",
+							"value": "{{app_id}}"
+						},
+						{
+							"key": "app_code",
+							"value": "{{app_code}}"
+						},
+						{
+							"key": "waypoint0",
+							"value": "38.85702,-94.79844"
+						},
+						{
+							"key": "waypoint1",
+							"value": "38.87423,-94.78308"
+						},
+						{
+							"key": "mode",
+							"value": "shortest;pedestrian"
+						},
+						{
+							"key": "routeAttributes",
+							"value": "none,legs",
+							"disabled": true
+						},
+						{
+							"key": "instructionFormat",
+							"value": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Map Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://image.maps.cit.api.here.com/mia/1.6/mapview?app_id={{app_id}}&app_code={{app_code}}&c=25.25984,55.31&w=240&h=240&z=10",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"cit",
+						"api",
+						"here",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"mapview"
+					],
+					"query": [
+						{
+							"key": "app_id",
+							"value": "{{app_id}}"
+						},
+						{
+							"key": "app_code",
+							"value": "{{app_code}}"
+						},
+						{
+							"key": "c",
+							"value": "25.25984,55.31"
+						},
+						{
+							"key": "w",
+							"value": "240"
+						},
+						{
+							"key": "h",
+							"value": "240"
+						},
+						{
+							"key": "z",
+							"value": "10"
+						},
+						{
+							"key": "t",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "ml",
+							"value": "ar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Map Image with Route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://image.maps.api.here.com/mia/1.6/route?r0=52.540867,13.262444,52.536691,13.264561,52.529172,13.268337,52.528337,13.273144,52.52583,13.27898,52.518728,13.279667&lc0=ffff0000&app_id={{app_id}}&app_code={{app_code}}",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"api",
+						"here",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"route"
+					],
+					"query": [
+						{
+							"key": "r0",
+							"value": "52.540867,13.262444,52.536691,13.264561,52.529172,13.268337,52.528337,13.273144,52.52583,13.27898,52.518728,13.279667"
+						},
+						{
+							"key": "lc0",
+							"value": "ffff0000"
+						},
+						{
+							"key": "app_id",
+							"value": "{{app_id}}"
+						},
+						{
+							"key": "app_code",
+							"value": "{{app_code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Geocoding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1200+E+151st+St+Olathe+Kansas&app_id={{app_id}}&app_code={{app_code}}",
+					"protocol": "https",
+					"host": [
+						"geocoder",
+						"api",
+						"here",
+						"com"
+					],
+					"path": [
+						"6.2",
+						"geocode.json"
+					],
+					"query": [
+						{
+							"key": "searchtext",
+							"value": "1200+E+151st+St+Olathe+Kansas"
+						},
+						{
+							"key": "app_id",
+							"value": "{{app_id}}"
+						},
+						{
+							"key": "app_code",
+							"value": "{{app_code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reverse Geocoding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?app_id={{app_id}}&app_code={{app_code}}&mode=retrieveAddresses&prox=52.530861,13.38474",
+					"protocol": "https",
+					"host": [
+						"reverse",
+						"geocoder",
+						"api",
+						"here",
+						"com"
+					],
+					"path": [
+						"6.2",
+						"reversegeocode.json"
+					],
+					"query": [
+						{
+							"key": "app_id",
+							"value": "{{app_id}}"
+						},
+						{
+							"key": "app_code",
+							"value": "{{app_code}}"
+						},
+						{
+							"key": "mode",
+							"value": "retrieveAddresses"
+						},
+						{
+							"key": "prox",
+							"value": "52.530861,13.38474"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
